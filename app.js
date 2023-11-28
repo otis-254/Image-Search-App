@@ -26,9 +26,13 @@ async function searchImages() {
     results.map((result) => {
         const imageWrapper = document.createElement('div');
         imageWrapper.classList.add("images");
+
+
         const image = document.createElement('img');
         image.src = result.urls.small;
         image.alt = result.alt_description;
+        image.style.maxWidth = "100%";
+
         const imageLink = document.createElement('a');
         imageLink.href = result.links.html;
         imageLink.target = "_blank";

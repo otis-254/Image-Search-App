@@ -16,8 +16,6 @@ h1 {
     padding: 20px 10px;
 }
 
-
-
 form {
     padding: 20px 10px;
     margin-bottom: 50px;
@@ -25,7 +23,6 @@ form {
     align-items: center;
     justify-content: center;
 }
-
 
 input {
     padding: 10px 7px;
@@ -48,10 +45,10 @@ button {
 
 .container {
     max-width: 1200px;
-    align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    /* display: flex; */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .images {
@@ -59,13 +56,14 @@ button {
     height: 100%;
     overflow: hidden;
     border-radius: 10px;
+    margin-bottom: 60px;
 }
 
 .images img {
-    height: 100%;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-
 
 .images:hover img {
     opacity: .7;
@@ -80,7 +78,6 @@ button {
     padding: 10px;
     display: block;
 }
-
 
 a:hover {
     color: white;
@@ -99,8 +96,60 @@ a:hover {
 
 
 
+/* 
 @media screen and (max-width: 786px) {
-    .container {
+    form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    input {
         width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 20px;
+
+    }
+
+    .images {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .btn {
+        margin-top: 20px;
     }
 }
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+
+    }
+
+    .images {
+        width: 100%;
+    }
+
+    .btn {
+        margin-top: 20px;
+    }
+} */
